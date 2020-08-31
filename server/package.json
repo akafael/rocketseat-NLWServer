@@ -1,0 +1,17 @@
+{
+  "name": "rocketseat-NLWServer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/akafael/rocketseat-NLWServer.git",
+  "author": "Rafael <akafael@users.noreply.github.com>",
+  "license": "MIT",
+
+  "scripts":{
+      "start": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"
+  },
+
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.61",
+    "typescript": "^4.0.2"
+  }
+}
