@@ -6,11 +6,13 @@ import express from 'express';
 
 const app = express();
 
+// Enable JSON
+app.use(express.json());
 
-// Add 
+// Add new rote
 app.get('/users', (request, response) => {
     console.log("Hello HTTP");
-    return response.send("Hello World!");
+    return response.json({message:"Hello World!"});
 })
 
 // List to HTTP Requests from Port 3333
