@@ -7,11 +7,11 @@ Server Application for Next Level Week from RocketSeat.
 
 ### Functionalities
 
- * [ ] (Connections) Rote to create new connection
- * [ ] (Connections) Rote to list all conections realised
+ * [x] (Connections) Rote to create new connection
+ * [x] (Connections) Rote to list all conections realised
  * [x] (Classes) Rote to create new class
- * [ ] (Classes) Rote to list all classes
-   * [ ] Filter by class, weekday and professors
+ * [x] (Classes) Rote to list all classes
+   * [x] Filter by class, weekday and professors
 
 ### Start Server
 

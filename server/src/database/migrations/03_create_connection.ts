@@ -20,7 +20,7 @@ export async function up(knex: Knex) {
 
         // Time stamp
         table.timestamp('created_at')
-            .defaultTo(knex.raw('CURRENT_TIMESTAMP')) //now() em outros
+            .defaultTo(knex.raw('CURRENT_TIMESTAMP'))
             .notNullable();
     });
 }
