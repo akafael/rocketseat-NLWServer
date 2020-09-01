@@ -2,20 +2,18 @@
  * Server Application
  */
 
+ // External Imports
 import express from 'express';
+import cors from 'cors';
+
+// Project Imports
 import routes from './routes';
 
 const app = express();
 
-// Enable JSON
-app.use(express.json());
-app.use(routes);
-
-// Add new rote
-app.get('/users', (request, response) => {
-    console.log("Hello HTTP");
-    return response.json({message:"Hello World!"});
-})
+app.use(cors); // Enable Acept API Calls fom sama address
+app.use(express.json()); // Enable JSON
+app.use(routes); // Use routes defined at routes.ts
 
 // List to HTTP Requests from Port 3333
 app.listen(3333);
