@@ -3,11 +3,13 @@
  */
 
 import express from 'express';
+import routes from './routes';
 
 const app = express();
 
 // Enable JSON
 app.use(express.json());
+app.use(routes);
 
 // Add new rote
 app.get('/users', (request, response) => {
