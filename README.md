@@ -19,3 +19,7 @@ Server Application for Next Level Week from RocketSeat.
 cd server
 yarn start
 ```
+
+## Reference
+
+ * [Node Best Practices](https://github.com/goldbergyoni/nodebestpractices#1-project-structure-practices)
