@@ -1,4 +1,9 @@
+/**
+ * Landing Page
+ */
+
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 // Import files from project
 import logoImg from '../../assets/images/logo.svg';
@@ -6,11 +11,10 @@ import landingImg from '../../assets/images/landing.svg';
 import studyIcon from '../../assets/images/icons/study.svg';
 import giveClassesIcon from '../../assets/images/icons/give-classes.svg';
 import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
-
 import './styles.css';
 
 /**
- * Generate Landing Page HTML
+ * Generate Landing Page Component
  */
 function Landing() {
     return (
@@ -26,17 +30,17 @@ function Landing() {
                 className="hero-image"
             />
             <div className="buttons-container">
-                <a>
+                <Link className="study" to="/study">
                     <img src={studyIcon} alt="Study" className="study"/>
                     Study
-                </a>
-                <a>
+                </Link>
+                <Link className="give-classes" to="/give-classes">
                     <img src={giveClassesIcon} alt="Give Classes" className="give-classes"/>
-                    Give Classes
-                </a>
+                    Give Class
+                </Link>
             </div>
             <span className="total-connections">
-                Total de 2000 conexões já realizadas <img src={purpleHeartIcon} alt="Purple Heart"/>
+                Over 2000 connections realized <img src={purpleHeartIcon} alt="Purple Heart"/>
             </span>
         </div>
     </div>

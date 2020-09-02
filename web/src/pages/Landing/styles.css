@@ -1,5 +1,6 @@
 /**
  * Landing Page Stylesheet
+ * - (Mobile First) Mobile Layout as Default
  */
 #page-landing {
     width: 100vw;
@@ -91,6 +92,10 @@
     margin-left: 0.8rem;
 }
 
+/*
+ * Desktop Layout
+ * - Triggered by page width
+ */
 @media (min-width: 1100px) {
     #page-landing-content{
         max-width: 1100px;
