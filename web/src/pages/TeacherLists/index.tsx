@@ -7,14 +7,16 @@ import React from 'react';
 
 // Project Imports
 import './styles.css';
+import PageHeader from '../../components/PageHeader';
 
 /**
  * Build Teacher List Component
  */
 function TeacherList() {
     return (
-        <div id="page-teacher-form" className="container">
-        <h1>Teacher List</h1>
+        <div id="page-teacher-list" className="container">
+            <PageHeader title="Proffys available"></PageHeader>
+            <h1>Classes List</h1>
         </div>
     )
 }
