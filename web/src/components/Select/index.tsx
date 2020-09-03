@@ -1,0 +1,41 @@
+/**
+ * Custom Select Component
+ */
+
+// External Imports
+import React, {SelectHTMLAttributes} from 'react';
+
+// Project Imports
+import './styles.css';
+
+/**
+ * Select Component Properties Interface
+ */
+interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement>{
+    label: string;
+    name: string;
+    options: Array<{
+        value: string;
+        label: string;
+    }>;
+}
+
+/**
+ * Build Custom Select Component
+ * @param param0
+ */
+const Select: React.FC<SelectProps> = ({ label, name, options, ...rest }) => {
+    return (
+        <div className="select-block">
+            <label htmlFor={name}>{label}</label>
+            <select value="" id={name} {...rest}>
+                <option value="" disabled hidden>Select Option</option>
+                {options.map(option => {
+                    return <option key={option.value} value={option.value}>{option.label}</option>;
+                })}
+            </select>
+        </div>
+    );
+}
+
+export default Select;

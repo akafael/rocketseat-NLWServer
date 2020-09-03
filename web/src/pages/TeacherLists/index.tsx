@@ -9,7 +9,7 @@ import React from 'react';
 import './styles.css';
 import warningIcon from '../../assets/images/icons/warning.svg';
 import PageHeader from '../../components/PageHeader';
-import Select from '../../components/PageHeader';
+import Select from '../../components/Select';
 import Input from '../../components/Input';
 
 /**
@@ -27,10 +27,18 @@ function TeacherList() {
                         label="Subject"
                     />
 
-                    <Input
-                        type="text"
-                        name="Week Day"
+                    <Select 
+                        name="week_day"
                         label="Week Day"
+                        options={[
+                            {value: '0', label: 'Sunday'},
+                            {value: '1', label: 'Monday'},
+                            {value: '2', label: 'Tuesday'},
+                            {value: '3', label: 'Wednesday'},
+                            {value: '4', label: 'Thuesday'},
+                            {value: '5', label: 'Friday'},
+                            {value: '6', label: 'Saturday'},
+                        ]} 
                     />
 
                     <Input
